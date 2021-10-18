@@ -1,7 +1,6 @@
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
-
 from sklearn.feature_extraction.text import HashingVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
@@ -12,7 +11,7 @@ from sklearn.pipeline import Pipeline
 
 train = pd.read_excel('input/train.xls')
 sikayetsayisi=len(train)
-yontem=CountVectorizer
+yontem=TfidfVectorizer
 
 print(train.info())
 print(train.describe())
