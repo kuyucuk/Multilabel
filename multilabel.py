@@ -11,7 +11,7 @@ from sklearn.pipeline import Pipeline
 
 train = pd.read_excel('input/train.xls')
 sikayetsayisi=len(train)
-yontem=TfidfVectorizer
+yontem=CountVectorizer
 
 print(train.info())
 print(train.describe())
