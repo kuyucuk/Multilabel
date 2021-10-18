@@ -8,7 +8,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.pipeline import Pipeline
 
-
 train = pd.read_excel('input/train.xls')
 sikayetsayisi=len(train)
 yontem=CountVectorizer
