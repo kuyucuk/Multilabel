@@ -10,5 +10,6 @@ os.system('git add .')
 os.system('git commit -a -m "update '+str(tarihsaat)+'"')
 os.system('git push')
 
+
 print(tarih)
 print("git pushing completed " +tarihsaat)
