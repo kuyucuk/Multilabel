@@ -3,10 +3,12 @@ import sys
 import io
 import datetime
 
+tarihsaat = datetime.datetime.now().strftime("%d-%m-%Y %H:%M");
+tarih = datetime.datetime.now().strftime("%d-%m-%Y");
+
 os.system('git add .')
-os.system('git commit -a -m update')
+os.system('git commit -a -m "update '+str(tarih)+'"')
 os.system('git push')
 
-tarihsaat = datetime.datetime.now().strftime("%d-%m-%Y %H:%M");
-print(tarihsaat)
-print("git pushing completed")
+print(tarih)
+print("git pushing completed " +tarihsaat)
